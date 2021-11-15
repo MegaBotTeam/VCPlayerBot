@@ -129,8 +129,8 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('⚙️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url='https://t.me/Mega_Bots'),
+            InlineKeyboardButton('𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 📌', url='https://t.me/Mega_Bots_Supporters')
         ],
         [
             InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
@@ -188,15 +188,15 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 📌', url='https://t.me/Mega_Bots_Supporters'),
+            InlineKeyboardButton('⚙️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url='https://t.me/Mega_Bots'),     
         ],
         [
-            InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
+            InlineKeyboardButton("𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 🔘", url='https://t.me/Sidharth005'),
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
-    await message.reply("<b>The source code of this bot is public and can be found at <a href=https://github.com/subinps/VCPlayerBot>VCPlayerBot.</a>\nYou can deploy your own bot and use in your group.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply("<b>The source code of this bot is public and can be found at <a href=https://t.me/Sidharth005>VCPlayerBot.</a>\nContact My Owner He will Give You Repo.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     await delete_messages([message])
 
 @Client.on_message(filters.command(['restart', 'update', f"restart@{Config.BOT_USERNAME}", f"update@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
